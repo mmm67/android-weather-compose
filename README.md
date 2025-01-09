@@ -23,7 +23,6 @@ This project is a simple weather application built using Jetpack Compose for And
 - **Retrofit:** For making network requests.
 - **Coroutines:** For asynchronous tasks.
 
-- 
 ## OpenWeatherMap API
 
 This application uses the OpenWeatherMap API to fetch weather information. You can visit [OpenWeatherMap](https://openweathermap.org/) to learn more about it. Make sure you have obtained your API Key from OpenWeatherMap and insert it in your local.properties file.
