@@ -12,7 +12,7 @@ This project is a simple weather application built using Jetpack Compose for And
 
 ## Screenshot
 
-<img src="weather-app.gif" width="400" height="300"/>
+<img src="weather-app.gif" width="400" height="600"/>
 
 
 ## Technologies Used
