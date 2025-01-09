@@ -31,7 +31,6 @@ import com.example.composeweatherapp.domain.entities.DailyForecastItem
 import com.example.composeweatherapp.domain.entities.ForecastItem
 import com.example.composeweatherapp.utils.Constants.DEFAULT_CITY
 import com.example.composeweatherapp.utils.extractTimeFromDateTimeString
-import com.example.composeweatherapp.utils.getDayOfWeekAbbreviation
 import com.google.accompanist.swiperefresh.SwipeRefresh
 import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
 import java.math.RoundingMode
@@ -346,7 +345,7 @@ fun DailyForecastItemScreen(
 
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(
-                    painter = painterResource(R.drawable.hightemperature),
+                    painter = painterResource(R.drawable.high_temperature),
                     contentDescription = "Max Temperature Icon",
                     modifier = Modifier.size(25.dp),
                     tint = Color.Unspecified
@@ -360,7 +359,7 @@ fun DailyForecastItemScreen(
 
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(
-                    painter = painterResource(R.drawable.lowtemperature),
+                    painter = painterResource(R.drawable.low_temperature),
                     contentDescription = "Min Temperature Icon",
                     modifier = Modifier.size(25.dp),
                     tint = Color.Unspecified
@@ -378,8 +377,8 @@ fun DailyForecastItemScreen(
 fun mapIconCodeToDrawable(iconCode: String): Int {
     return when (iconCode) {
         "01d", "01n" -> R.drawable.sunny
-        "02d", "03d" -> R.drawable.partly_cloudly
-        "02n", "03n" -> R.drawable.partlycloudynight
+        "02d", "03d" -> R.drawable.partly_cloudy
+        "02n", "03n" -> R.drawable.partly_cloudy_night
         "04d" -> R.drawable.broken_cloud
         "04n" -> R.drawable.brokencloudnight
         "09d", "09n" -> R.drawable.shower_rainy_day
